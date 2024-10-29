@@ -23,6 +23,9 @@ nav{
     margin: 0 auto;
     max-width: 1000px;
 }
+.logo{
+    width: 150px;
+}
 .logo:hover{
     cursor: pointer;
 }
@@ -33,14 +36,17 @@ nav{
     font-size: 1.2em;
     margin-right: 0.7rem;
 }
-
+.nav-links>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
 .nav-links>ul>li:hover{
     opacity: 0.5;
     cursor: pointer;
 }
 
 .intro{
-    height: 500px;
+    height: auto;
     background: #2D4739;
     padding-top: 2rem;
 }
@@ -48,6 +54,7 @@ nav{
 .background{
     height: 400px;
     width:400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
 }
 
 .features,.quote{
@@ -56,6 +63,35 @@ nav{
     color: #fff;
     line-height: 35px;
     font-family:Inknut Antiqua;
+    background: #7a5032;
+    opacity: 0.7;
+    height: 470px;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features:hover,.quote:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+}
+
+@media(min-width:550px) and (max-width:1030px){
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-grow: 1;
+    }
+    .features,.quote{
+        max-width: 300px;
+        height: auto;
+    }
+    .background{
+        margin-bottom: 3rem;
+    }
 }
 /*Footer*/
 
