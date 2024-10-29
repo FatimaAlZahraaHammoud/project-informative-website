@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="/styles/utilities.css">
+    <link rel="stylesheet" href="styles/base/base.css">
+    <link rel="stylesheet" href="/styles/base/utilities.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -11,27 +11,30 @@
     <!-- navbar -->
     <nav>
         <div class="menu flex align_items_center space_between">
-            <div class="logo">
-                <img src="assets/logo.png" alt="Logo">
+            <div>
+                <img src="assets/logo.png" alt="Logo" class="logo">
             </div>
             <div class="nav-links">
                 <ul class="flex">
-                    <li>HOME</li>
-                    <li>ABOUT US</li>
-                    <li>CONTACT US</li>
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div class="intro flex">
-        <div>
+    <div class="intro flex space-evenly">
+        <div class="quote">
             <p>"In the shadows of the maze, courage lights the path. Face your fears, conquer the undead, and emerge a hero!"</p>
         </div>
-        <div>
+        <div class="features">
             <p>KEY FEATURES:</p>
             <br>
             <p>In the depth of the woods, reside magical creatures. Slime a Challenging maze filled with the undead that only mean harm. Hero will cross through the night...vision might not be clear</p>
+        </div>
+        <div>
+            <img src="/assets/footer-images/background.jpeg" alt="Hero's Path"  class="background">
         </div>
     </div>
     

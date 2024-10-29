@@ -1,7 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -21,9 +21,11 @@ nav{
 
 .menu{
     margin: 0 auto;
-    max-width: 900px;
+    max-width: 1000px;
 }
-
+.logo:hover{
+    cursor: pointer;
+}
 .nav-links>ul>li{
     list-style: none;
     padding: 0.7rem;
@@ -32,11 +34,29 @@ nav{
     margin-right: 0.7rem;
 }
 
-.intro{
-    height: 600px;
-    background: #2D4739;
+.nav-links>ul>li:hover{
+    opacity: 0.5;
+    cursor: pointer;
 }
 
+.intro{
+    height: 500px;
+    background: #2D4739;
+    padding-top: 2rem;
+}
+
+.background{
+    height: 400px;
+    width:400px;
+}
+
+.features,.quote{
+    max-width: 250px;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 35px;
+    font-family:Inknut Antiqua;
+}
 /*Footer*/
 
 footer{
