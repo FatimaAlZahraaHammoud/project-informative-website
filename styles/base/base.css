@@ -9,6 +9,21 @@
     src: url("./../../assets/fonts/Inknut_Antiqua/InknutAntiqua-Regular.ttf");
 }
 
-footer{
+footer {
     font-family: "Inknut Antiqua";
 }
+
+.div-creators {
+    height: 584px;
+
+}
+
+.div-copyrights{
+    height: 165px;
+}
+
+.div-profile {
+    width: 198px;
+    height: 198px;
+}
+
