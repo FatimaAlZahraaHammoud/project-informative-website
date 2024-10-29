@@ -77,6 +77,20 @@ nav{
     transform: translateY(-10px);
     box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
     opacity: 1;
+    cursor: pointer;
+}
+
+.burger-icon{
+    border-radius: 0.5rem;
+    font-size: 2.8rem;
+    color: #2D4739;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    margin-right: 2.5rem;
+}
+.burger{
+    display: none;
 }
 
 @media(min-width:550px) and (max-width:1030px){
@@ -91,6 +105,38 @@ nav{
     }
     .background{
         margin-bottom: 3rem;
+    }
+}
+
+@media(max-width:549px){
+    .nav-links{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-grow: 1;
+    }
+    .features,.quote{
+        max-width: 300px;
+        height: auto;
+    }
+    .background{
+        margin-bottom: 3rem;
+        max-width: 340px;
+        flex-grow: 1;
+        border: none;
+    }
+ 
+    .burger-icon:hover{
+        cursor: pointer;
+    }
+    .menu{
+        max-width: 400px;
+        justify-content: space-evenly;
     }
 }
 /*Footer*/
