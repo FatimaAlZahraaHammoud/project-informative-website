@@ -1,0 +1,26 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background:#7A5032;
+    height: 130x;
+}
+
+.menu{
+    margin: 0 auto;
+    max-width: 900px;
+}
+
+.nav-links>ul>li{
+    list-style: none;
+    padding: 0.7rem;
+    color: #fff;
+    font-size: 1.2em;
+    margin-right: 0.7rem;
+}
+
+.nav-links>ul{
+    
+}
