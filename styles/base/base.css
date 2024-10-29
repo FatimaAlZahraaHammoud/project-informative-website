@@ -1,0 +1,14 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Inknut Antiqua";
+    src: url("./../../assets/fonts/Inknut_Antiqua/InknutAntiqua-Regular.ttf");
+}
+
+footer{
+    font-family: "Inknut Antiqua";
+}
