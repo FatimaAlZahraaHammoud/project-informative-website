@@ -21,6 +21,17 @@
 
 .space-between{
   justify-content: space-between;
+  
+.space-evenly{
+  justify-content: space-evenly;
+}
+  
+.align_items_center{
+    align-items: center;
+}
+  
+.d-coloumn{
+  flex-direction: column;
 }
 
 .full-width {

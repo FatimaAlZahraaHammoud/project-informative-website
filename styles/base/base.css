@@ -1,8 +1,7 @@
 * {
     padding: 0;
     margin: 0;
-    box-sizing: border-box;
-    overflow-x: hidden;
+    scroll-behavior: smooth;
 }
 
 @font-face {
@@ -10,7 +9,155 @@
     src: url("./../../assets/fonts/Inknut_Antiqua/InknutAntiqua-Regular.ttf");
 }
 
-footer {
+body{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    background:#7A5032;
+    height: 130x;
+}
+
+.menu{
+    margin: 0 auto;
+    max-width: 1000px;
+}
+.logo{
+    width: 150px;
+}
+.logo:hover{
+    cursor: pointer;
+}
+.nav-links>ul>li{
+    list-style: none;
+    padding: 0.7rem;
+    color: #fff;
+    font-size: 1.2em;
+    margin-right: 0.7rem;
+}
+.nav-links>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+}
+.nav-links>ul>li:hover{
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.intro{
+    height: auto;
+    background: #2D4739;
+    padding-top: 2rem;
+}
+
+.background{
+    height: 400px;
+    width:400px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+}
+
+.features,.quote{
+    max-width: 250px;
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 35px;
+    font-family:Inknut Antiqua;
+    background: #7a5032;
+    opacity: 0.7;
+    height: 470px;
+    border-radius: 20px;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.features:hover,.quote:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    opacity: 1;
+    cursor: pointer;
+}
+
+.burger-icon{
+    border-radius: 0.5rem;
+    font-size: 2.8rem;
+    color: #2D4739;
+    font-weight: bolder;
+    background-color: transparent;
+    border: none;
+    margin-right: 2.5rem;
+}
+.burger{
+    display: none;
+}
+
+.offcanvas{
+    text-align: center;
+    background: #7A5032;
+
+}
+.offcanvas>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+.offcanvas>ul>li{
+    padding: 1rem;
+}
+
+@media(min-width:550px) and (max-width:1030px){
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-grow: 1;
+    }
+    .features,.quote{
+        max-width: 300px;
+        height: auto;
+    }
+    .background{
+        margin-bottom: 3rem;
+    }
+}
+
+@media(max-width:549px){
+    .nav-links{
+        display: none;
+    }
+    .burger{
+        display: block;
+    }
+    .intro{
+        display: flex;
+        flex-direction: column-reverse;
+        flex-grow: 1;
+    }
+    .features,.quote{
+        max-width: 300px;
+        height: auto;
+    }
+    .background{
+        margin-bottom: 3rem;
+        max-width: 340px;
+        flex-grow: 1;
+        border: none;
+    }
+ 
+    .burger-icon:hover{
+        cursor: pointer;
+    }
+    .menu{
+        max-width: 400px;
+        justify-content: space-evenly;
+    }
+}
+
+
+/*Footer*/
+
+footer{
     font-family: "Inknut Antiqua";
 }
 
@@ -52,9 +199,8 @@ img {
 
 .div-creator-card {
     height: 480px;
-    width: 100%;
+    width: 300px;
     text-align: center;
-
 
 
 }
@@ -67,8 +213,7 @@ img {
 
 .div-profile-main {
     flex-grow: 1;
-    gap: 100px;
-    margin: 0 100px;
+    gap: 250px;
 }
 
 .div-profile-main h3 {
