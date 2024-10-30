@@ -93,6 +93,20 @@ nav{
     display: none;
 }
 
+.offcanvas{
+    text-align: center;
+    background: #7A5032;
+
+}
+.offcanvas>ul>li>a{
+    text-decoration: none;
+    color: #fff;
+    padding-bottom: 1rem;
+}
+.offcanvas>ul>li{
+    padding: 1rem;
+}
+
 @media(min-width:550px) and (max-width:1030px){
     .intro{
         display: flex;
