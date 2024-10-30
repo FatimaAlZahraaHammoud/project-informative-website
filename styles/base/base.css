@@ -2,6 +2,7 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    overflow-x: hidden;
 }
 
 @font-face {
@@ -43,32 +44,48 @@ img {
 
 .div-creators>h3 {
     text-align: center;
-    margin: 10px;
+    margin-bottom: 10px;
     font-size: 40px;
-    
+
 
 }
 
-.div-creator-card{
-    height:480px;
-    width:300px;
+.div-creator-card {
+    height: 480px;
+    width: 100%;
     text-align: center;
-   
-    
+
+
+
 }
 
-.div-creator-card>h3{
-    width:350px;
+.div-creator-card>h3 {
+    width: 350px;
     text-align: center;
-    
+
+}
+
+.div-profile-main {
+    flex-grow: 1;
+    gap: 100px;
+    margin: 0 100px;
 }
 
 .div-profile-main h3 {
     font-size: 22px;
+
 }
 
 
 footer p {
     font-size: 16px;
-    width:100%;
+    width: 100%;
+}
+
+@media (max-width: 255px) {
+    .div-profile-main {
+        flex-direction: column;
+        justify-content: center;
+    }
+
 }
