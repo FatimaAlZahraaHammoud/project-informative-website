@@ -39,3 +39,46 @@
 .full-height {
   height: 100%;
 }
+.flex{
+  display: flex;
+}
+
+.align_items_center{
+  align-items: center;
+}
+
+.center {
+  align-items: center;
+  justify-content: center;
+}
+
+.space-around{
+  justify-content: space-around;
+}
+
+.space_between{
+  justify-content: space-between;
+}
+
+.space-evenly{
+  justify-content: space-evenly;
+}
+
+.row {
+  flex-direction: row;
+}
+
+.column {
+  flex-direction: column;
+}
+
+.rounded{
+  border-radius: 150px;
+}
+
+.d-none{
+  display: none;
+}
+.d-block{
+  display: block;
+} 
