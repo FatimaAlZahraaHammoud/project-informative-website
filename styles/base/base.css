@@ -110,6 +110,29 @@ nav{
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
 
+.characters {
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+.skeleton, .hero, .slime {
+    width: 30%; 
+    text-align: center; 
+}
+
+.character-div {
+    padding: 10px;
+    margin: 10px;
+    box-sizing: border-box; 
+}
+.description{
+    max-width: 330px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+
 @media(min-width:550px) and (max-width:1030px){
     .intro{
         display: flex;
@@ -122,6 +145,21 @@ nav{
     }
     .background{
         margin-bottom: 3rem;
+    }
+    .characters{
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
+    .skeleton,.hero,.slime{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .description{
+        width: 500px;
+        border: #7A5032 1px solid;
     }
 }
 
@@ -154,6 +192,20 @@ nav{
     .menu{
         max-width: 400px;
         justify-content: space-evenly;
+    }
+    .characters{
+        margin:0 auto;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .skeleton,.hero,.slime{
+        margin: 2.5rem auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .description{
+        width: 300px;
     }
 }
 /*Footer*/
