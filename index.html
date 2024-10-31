@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
         <link rel="stylesheet" href="styles/base/base.css">
         <link rel="stylesheet" href="styles/base/colors.css">
         <link rel="stylesheet" href="styles/base/utilities.css">
-        <link rel="icon" href="/assets/logo.png">
+        <link rel="icon" href="assets/logo.png">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Hero's Path</title>
     </head>
     <body>
-
         <!-- navbar -->
         <nav>
             <div class="menu flex align_items_center space_between">
                 <div>
-                    <img src="./assets//hero-section-images/logo.png" alt="Logo" class="logo">
+                    <img src="assets/logo.png" alt="Logo" class="logo">
                 </div>
                 <div class="nav-links">
                     <ul class="flex">
@@ -41,60 +41,111 @@
                 <li><a href="#">CONTACT US</a></li>
             </ul>
         </div>
-
-        <div class="intro flex align_items_center space-evenly">
-            <div class="quote">
-                <p>"In the shadows of the maze, courage lights the path. Face your fears, conquer the undead, and emerge a hero!"</p>
-            </div>
-            <div class="features">
-                <p>KEY FEATURES:</p>
-                <br>
-                <p>In the depth of the woods, reside magical creatures. Slime a Challenging maze filled with the undead that only mean harm. Hero will cross through the night...vision might not be clear</p>
-            </div>
-            <div>
-                <img src="./assets//hero-section-images/background.jpeg" alt="Hero's Path"  class="background">
+        <!-- layout of the picture -->
+        <div class="intro-container">
+            <div class="intro flex align_items_center space_between">
+                <div class="features">
+                    <h3>KEY FEATURES:</h3>
+                    <br>
+                    <ul style="list-style: disc;">
+                        <li>Challenging Mazes</li>
+                        <li>Intense Enemy Encounter</li>
+                        
+                        <li>Scoring System
+                            <ul style="list-style: circle;">
+                                <li>&nbsp;&nbsp;High-Score</li>
+                                <li>&nbsp;&nbsp;Leaderboards</li>
+                            </ul>
+                        </li>
+                        <li>Fog of War</li>
+                    </ul>
+                </div>
+                <!-- flex the 2 divs -->
+                <div class="img-q flex column">
+                    <div>
+                        <img src="assets/background.jpeg" alt="Hero's Path"  class="background">
+                    </div>
+                    <div class="quote">
+                        <p>"In the shadows of the maze, courage lights the path. Face your fears, conquer the undead, and emerge a hero!"</p>
+                    </div>
+                </div>
             </div>
         </div>
 
-        <footer class="white-txt">
-            <div class="div-creators full-width green-bg">
-                <h3>Creators</h3>
-                <div class="div-profile-main flex row center space-around">
-                    <div class="div-creator-card flex column center">
-                        <div class="div-profile rounded"><img src="assets/footer-images/ryan.png" alt="ryan-profile"></div>
-                        <h3>Ryan Chehab</h3>
-                        <p>Lorem Ipsumes simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de </p>
+        <!-- Character section -->
+            <div class="Charcter-section">
+                <h3>Characters</h3>
+                <div class="characters">
+                    <!-- skeleton section -->
+                    <div class="skeleton flex column">
+                        <div class="skeleton-div">
+                            <img src="assets/characters/skeleton.png" alt="Skeleton" class="charcter-img">
+                        </div>
+                        <div class="description">
+                            <p>A magical creature, which harms anyone who enters darkwood. Is a threat to all friendly magical creatures</p>
+                        </div>
                     </div>
-                    <div class="div-creator-card flex column center">
-                        <div class="div-profile rounded"><img src="assets/footer-images/fatima.jpeg" alt="fatima-profile"></div>
-                        <h3>Fatima Al-zahraa Hammoud</h3>
-                        <p>Lorem Ipsumes simplemente el  Lorem Ipsum ha sido el texto de relleno estándar de las industrias desde el año 1500, cuando un impresor.</p>
+                    <!-- hero section -->
+                    <div class="hero flex column">
+                        <div class="hero-div">
+                            <img src="assets/characters/hero.png" alt="Hero"
+                            class="charcter-img">
+                        </div>
+                        <div class="description">
+                            <p>Hero, entered darkwood after losing his way home. Brave, unafraid to venture in the unknown. Despite hero being lost, his courage and determination will lead him out of darkwood unharmed</p>
+                        </div>
                     </div>
-                    <div class="div-creator-card flex column center">
-                        <div class="div-profile rounded"><img src="assets/footer-images/hussein.jpeg" alt="hussein-profile"></div>
-                        <h3>Hussein Fakih</h3>
-                        <p>Lorem Ipsumes simplemente el texto de relleno de las imprentas y archivos de texto. Lorem Ipsum ha sido el texto de relleno estándar de las industri</p>
+                    <!-- slime section -->
+                    <div class="slime flex column">
+                        <div class="slime-div">
+                            <img src="assets/characters/slime.png" alt="slime" class="charcter-img">
+                        </div>
+                        <div class="description">
+                            <p>Cute little energetic magical creatures,  vibrant and playful. However hero must defeat them in order to harness their power and enhance his magical power, to be able to face terrors of darkwood.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- creaters-->
+
+            <div class="white-txt">
+                <div class="div-creators full-width green-bg">
+                    <h3>Creators</h3>
+                    <div class="div-profile-main flex row center space-around">
+                        <div class="creator-cont">
+                            <div class="div-creator-card flex column center">
+                                <div class="div-profile rounded"><img src="assets/footer-images/ryan.png" alt="ryan-profile" class="creator-img"></div>
+                                <h3>Ryan Chehab</h3>
+                                <p>MIS Graduate year 2024 At BAU</p>
+                            </div>
+                            <div class="div-creator-card flex column center">
+                                <div class="div-profile rounded"><img src="assets/footer-images/fatima.jpeg" alt="fatima-profile" class="creator-img"></div>
+                                <h3>Fatima Al-zahraa Hammoud</h3>
+                                <p>Computer Science Student at AL-Mmaaref University</p>
+                            </div>
+                            <div class="div-creator-card flex column center">
+                                <div class="div-profile rounded"><img src="assets/footer-images/hussein.jpeg" alt="hussein-profile" class="creator-img"></div>
+                                <h3>Hussein Fakih</h3>
+                                <p>MIS Graduate year 2018 At USJ</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
 
-            <div class="div-copyrights flex row full-width brown-bg center">
-                <div class="div-contact flex column">
-                    <p>Email: contact@contact.com</p>
-                    <p>Phone: +961 (123) 456-789</p>
-                    <p>Address: 123 Game Studio St., City, Country</p>
-                </div>
-                <div class="flex column center">
-                    <div class="flex row">
-                        <div class="div-logo"><img src="assets/footer-images/x.png" alt="x-logo"></div>
-                        <div class="div-logo"><img src="assets/footer-images/youtube.png" alt="youtube-logo"></div>
-                        <div class="div-logo"><img src="assets/footer-images/facebook.png" alt="facebook-logo"></div>
-                    </div>
-                    <p>Hero&#39;s Path is © Copyright 2024 SE Factory</p>
-                </div>
+        <!-- footer -->
+
+        <footer class="info flex row space_between">
+            <div class="emails">
+                <p>ryanchehab20@gmail.com</p>
+                <p>fatimaalzahraahammoud@gmail.com</p>
+                <p>fakih.hussein995@gmail.com</p>
+            </div>
+            <div class="socials flex column">
+                <img src="assets/footer-images/insta-logo.png" alt="insta logo" style="width: 2rem; margin: 0.3rem">
+                <img src="assets/footer-images/twitter-x-new-logo-round-icon-png-11692480241tdbz6jparr.webp" alt="X logo"  style="width: 2rem; margin: 0.3rem;">
             </div>
         </footer>
-
-        <script src="scripts/script.js"></script>   
-    </body>
+        <script src="scripts/script.js"></script>
+  </body>
 </html>
