@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="/styles/base/base.css">
+    <link rel="stylesheet" href="/styles/base/utilities.css">
+    <link rel="icon" href="/assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero's Path</title>
+</head>
+<body>
+    <!-- navbar -->
+    <nav>
+        <div class="menu flex align_items_center space_between">
+            <div>
+                <img src="assets/logo.png" alt="Logo" class="logo">
+            </div>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li><a href="#">HOME</a></li>
+                    <li><a href="#">ABOUT US</a></li>
+                    <li><a href="#">CONTACT US</a></li>
+                </ul>
+            </div>
+            <div class="burger">
+                <button class="burger-icon" type="button" id="burger_icon"><i class="fas fa-bars"></i></button>
+            </div>
+        </div>
+    </nav>
+    <!-- offcanvas menu -->
+    <div class="offcanvas d-none" id="offcanvas-links">
+        <ul class="flex column ">
+            <hr>
+            <li><a href="#">HOME</a></li>
+            <hr>
+            <li><a href="#">ABOUT US</a></li>
+            <hr>
+            <li><a href="#">CONTACT US</a></li>
+        </ul>
+    </div>
+    <!-- layout of the picture -->
+<div class="intro-container">
+    <div class="intro flex align_items_center space_between">
+        <div class="features">
+            <p>KEY FEATURES:</p>
+            <br>
+            <ul style="list-style: disc;">
+                <li>Challenging Mazes</li>
+                <li>Intense Enemy Encounter</li>
+                
+                <li>Scoring System
+                    <ul style="list-style: circle;">
+                        <li>&nbsp;&nbsp;High-Score</li>
+                        <li>&nbsp;&nbsp;Leaderboards</li>
+                    </ul>
+                </li>
+                <li>Fog of War</li>
+            </ul>
+        </div>
+        <!-- flex the 2 divs -->
+        <div class="img-q flex column">
+            <div>
+                <img src="/assets/footer-images/background.jpeg" alt="Hero's Path"  class="background">
+            </div>
+            <div class="quote">
+                <p>"In the shadows of the maze, courage lights the path. Face your fears, conquer the undead, and emerge a hero!"</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+   <!-- Character section -->
+    <div class="Charcter-section">
+        <h1>Characters</h1>
+        <div class="characters flex space-evenly">
+            <div class="skeleton">
+                <img src="/assets/charcters/skeleton.png" alt="Skeleton">
+            </div>
+            <div class="hero">
+                <img src="/assets/charcters/hero.png" alt="Hero">
+            </div>
+            <div class="slime">
+                <img src="/assets/charcters/slime.png" alt="slime">
+            </div>
+        </div>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
