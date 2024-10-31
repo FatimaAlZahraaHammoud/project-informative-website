@@ -15,7 +15,7 @@ body{
 }
 
 nav{
-    background:#7A5032;
+    background:#fff;
     height: 130x;
 }
 
@@ -38,17 +38,22 @@ nav{
 }
 .nav-links>ul>li>a{
     text-decoration: none;
-    color: #fff;
+    color: #7A5032;
+    font-family:Inknut Antiqua;
 }
 .nav-links>ul>li:hover{
     opacity: 0.5;
     cursor: pointer;
 }
 
-.intro{
+.intro-container{
     height: auto;
     background: #2D4739;
     padding-top: 2rem;
+}
+.intro{
+    max-width: 1000px;
+    margin: 0 auto;
 }
 
 .background{
@@ -58,26 +63,15 @@ nav{
 }
 
 .features,.quote{
-    max-width: 250px;
-    font-size: 1.5rem;
+    max-width: 400px;
+    font-size: 1.2rem;
     color: #fff;
-    line-height: 35px;
+    line-height: 45px;
     font-family:Inknut Antiqua;
-    background: #7a5032;
-    opacity: 0.7;
-    height: 470px;
-    border-radius: 20px;
+    height: auto;
     padding: 1rem;
     margin-bottom: 1.5rem;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
 
-.features:hover,.quote:hover{
-    transform: translateY(-10px);
-    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
-    opacity: 1;
-    cursor: pointer;
 }
 
 .burger-icon{
@@ -92,19 +86,67 @@ nav{
 .burger{
     display: none;
 }
-
 .offcanvas{
     text-align: center;
-    background: #7A5032;
-
+    background: #fff;
 }
 .offcanvas>ul>li>a{
     text-decoration: none;
-    color: #fff;
+    color: #7A5032;
     padding-bottom: 1rem;
+    font-size: 1.2rem;
+    font-weight: bolder;
 }
 .offcanvas>ul>li{
     padding: 1rem;
+}
+
+/* Character section */
+
+.Charcter-section {
+    background: url(./../../assets/footer-images/maze.jpeg) fixed;
+    padding: 2rem 0;
+    text-align: center;
+}
+
+.Charcter-section>h3{
+    font-size: 40px;
+    color: white;
+    margin-bottom: 2rem;
+}
+
+.characters {
+    display: flex; 
+    justify-content: space-evenly; 
+    align-items: flex-start; 
+    flex-wrap: wrap; 
+}
+
+.skeleton, .hero, .slime {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 20%; 
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.character-div {
+    padding: 10px;
+    box-sizing: border-box; 
+}
+
+.description{
+    background-color: #fff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.8);
+    padding: 1.5rem;
+    border-radius: 20px;
+    max-width: 330px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 1rem;
+    text-align: center;
 }
 
 @media(min-width:550px) and (max-width:1030px){
@@ -120,6 +162,31 @@ nav{
     .background{
         margin-bottom: 3rem;
     }
+    .characters{
+        max-width: 350px;
+        display: flex;
+        flex-direction: column;
+        margin:0 auto;
+    }
+    .skeleton,.hero,.slime{
+        margin: 0 auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .description{
+        width: 500px;
+    }
+    .info{
+        display: flex;
+        flex-direction:column;
+    }
+    .charcter-img{
+        margin-top: 5rem
+    }
+    .creator-cont{
+        flex-direction: column;
+    }
+
 }
 
 @media(max-width:549px){
@@ -152,17 +219,44 @@ nav{
         max-width: 400px;
         justify-content: space-evenly;
     }
+    .characters{
+        margin:0 auto;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+    }
+    .skeleton,.hero,.slime{
+        margin: 2.5rem auto;
+        justify-content: center;
+        align-items: center;
+    }
+    .description{
+        width: 300px;
+    }
+    .info{
+        display: flex;
+        flex-direction:column;
+    }
+    .charcter-img{
+        margin-top: 5rem
+    }
+    .creator-cont{
+        flex-direction: column;
+    }
+
 }
 
-/*Footer*/
-
-footer {
-    font-family: "Inknut Antiqua";
+.creator-cont{
+    display: flex;
+    gap: 100px;
 }
+
+.rounded{
+    border-radius: 150px;
+  }
 
 .div-creators {
-    height: 650px;
-
+    height: auto;
 }
 
 .div-copyrights {
@@ -182,15 +276,15 @@ footer {
     margin: 25px
 }
 
-img {
+.creator-img{
     width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 .div-creators>h3 {
     text-align: center;
-    margin: 10px;
     font-size: 40px;
     
 
@@ -214,16 +308,10 @@ img {
     font-size: 22px;
 }
 
-
-footer p {
-    font-size: 16px;
-    width:100%;
+footer{
+    font-family: "Inknut Antiqua";
 }
-
-@media (max-width: 255px) {
-    .div-profile-main {
-        flex-direction: column;
-        justify-content: center;
-    }
-
+.info{
+    margin-left: 3rem;
+    margin-right: 3rem;
 }
